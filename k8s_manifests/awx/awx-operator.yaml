@@ -467,8 +467,7 @@ metadata:
   name: awx-operator
 subjects:
   - kind: ServiceAccount
-    name: awx-operator
-    namespace: default
+    name: awx-operator    
 roleRef:
   kind: ClusterRole
   name: awx-operator
