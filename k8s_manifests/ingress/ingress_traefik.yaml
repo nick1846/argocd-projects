@@ -21,6 +21,7 @@ metadata:
       pgadmin.justpipeline.com,
       awx.justpipeline.com,
       prometheus.justpipeline.com,
+      grafana.justpipeline.com,
   labels:
     app: traefik
 spec:  
