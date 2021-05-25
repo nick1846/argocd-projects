@@ -17,6 +17,7 @@ metadata:
       traefik.justpipeline.com,
       argo.justpipeline.com,
       www.justpipeline.com,
+      pgadmin.justpipeline.com,
   labels:
     app: traefik
 spec:  
