@@ -15,7 +15,7 @@ metadata:
     alb.ingress.kubernetes.io/target-type: ip
     external-dns.alpha.kubernetes.io/hostname: >
       traefik.justpipeline.com,
-      argo.justpipeline.com,   
+      argo.justpipeline.com, 
       www.justpipeline.com,
   labels:
     app: traefik
