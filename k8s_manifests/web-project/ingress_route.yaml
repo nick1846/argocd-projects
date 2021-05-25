@@ -1,0 +1,21 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: myweb-route  
+  labels:
+    app: traefik  
+spec:
+  entryPoints:
+  - websecure
+  routes:
+  - match: Host(`www.justpipeline.com`)
+    kind: Rule
+    services:
+      - name: web-service
+        port: 80
+  - match: Host(`pgadmin.justpipeline.com`)
+    kind: Rule
+    services:
+      - name: pgadmin-service
+        port: 8080
+  
