@@ -1,9 +1,7 @@
 apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
 metadata:
-  name: grafana-route
-  annotations:
-    helm.sh/hook: "post-install, post-upgrade"
+  name: grafana-route 
   namespace: prometheus  
   labels:
     app: traefik  
