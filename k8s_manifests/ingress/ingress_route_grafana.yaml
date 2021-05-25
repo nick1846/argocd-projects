@@ -1,0 +1,19 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: grafana-route
+  namespace: prometheus  
+  labels:
+    app: traefik  
+spec:
+  entryPoints:
+  - websecure
+  routes:
+  - match: Host(`grafana.justpipeline.com`)
+    kind: Rule
+    services:
+      - name: grafana
+        port: 80
+  
+  
+  
