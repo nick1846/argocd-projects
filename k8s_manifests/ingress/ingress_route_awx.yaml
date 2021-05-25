@@ -1,0 +1,19 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: awx-route
+  namespace: awx  
+  labels:
+    app: traefik  
+spec:
+  entryPoints:
+  - websecure
+  routes:
+  - match: Host(`awx.justpipeline.com`)
+    kind: Rule
+    services:
+      - name: awx-service
+        port: 80
+  
+  
+  
