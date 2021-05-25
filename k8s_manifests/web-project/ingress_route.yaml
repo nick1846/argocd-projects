@@ -8,7 +8,7 @@ spec:
   entryPoints:
   - websecure
   routes:
-  - match: Host(`www.justpipeline.com`)
+  - match: Host(`www.justpipeline.com`) || Host(`justpipeline.com`)
     kind: Rule
     services:
       - name: web-service
