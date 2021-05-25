@@ -437,14 +437,14 @@ plugins: []
 ## ref: http://docs.grafana.org/administration/provisioning/#datasources
 ##
 datasources: {}
-  datasources.yaml:
-    apiVersion: 1
-    datasources:
-    - name: Prometheus
-      type: prometheus
-      url: http://helm-prometheus-server.prometheus.svc.cluster.local
-      access: proxy
-      isDefault: true 
+datasources.yaml:
+  apiVersion: 1
+  datasources:
+  - name: Prometheus
+    type: prometheus
+    url: http://helm-prometheus-server.prometheus.svc.cluster.local
+    access: proxy
+    isDefault: true 
 #    - name: CloudWatch
 #        type: cloudwatch
 #        access: proxy
